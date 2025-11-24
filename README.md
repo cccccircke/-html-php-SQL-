@@ -11,17 +11,17 @@
 
 ---
 
-## 3. 系統架構與設計 (System Architecture)
+## 3. 系統架構概念 (System Architecture)
 
-本系統採用標準的 LAMP/WAMP 架構邏輯。以下為系統的概念示意圖與資料庫結構參考（示意）：
+本系統採用標準的 LAMP/WAMP 架構邏輯。以下為系統的整體架構與概念示意：
 
-### 3.1 系統示意圖
-![System Architecture or UI Screenshot](image_460421.png)
-*(請在此處補充圖片說明，例如：系統首頁或登入介面截圖)*
+### 3.1 系統主架構圖
+![System Architecture](6.jpg)
+*(系統架構與運作邏輯總覽)*
 
-### 3.2 資料庫設計 / 流程圖
-![ER Diagram or Flowchart](image_46007e.png)
-*(請在此處補充圖片說明，例如：ER Diagram 實體關聯圖或使用者操作流程)*
+### 3.2 資料庫與流程設計
+![ER Diagram or Flow](5.png)
+*(資料庫實體關聯或使用者操作流程示意)*
 
 ---
 
@@ -32,44 +32,40 @@
 ### A. 會員管理模組 (User Authentication)
 使用者可以註冊帳戶並登入系統，進行個人資料的維護。
 * **相關檔案:** `login.php`, `register.php`, `sign-up.html`, `logout.php`
-* **功能:**
-    * 使用者註冊與登入驗證
-    * Session 管理 (維持登入狀態)
+* **功能:** 使用者註冊、登入驗證、Session 管理。
 
 ### B. 商店與商品模組 (Shop & Product)
 提供商店的建立、搜尋與列表展示，讓使用者能瀏覽不同店家的資訊。
 * **相關檔案:** `shoplist.php`, `shopadd.php`, `shopregister.php`, `search.php`, `showm.php`
-* **功能:**
-    * **商店列表 (`shoplist.php`):** 展示所有可用商店。
-    * **新增商店 (`shopadd.php`):** 允許註冊或上架新的商店資訊。
-    * **搜尋功能 (`search.php`):** 快速查找特定商店或商品。
+* **功能:** 商店列表展示、新增商店申請、關鍵字搜尋。
 
 ### C. 訂單處理系統 (Order System)
 核心交易功能，支援下單、查看訂單詳情與取消訂單。
 * **相關檔案:** `order.php`, `myorder.php`, `o_detail.php`, `o_cancel.php`
-* **功能:**
-    * **下單 (`order.php`):** 選擇商品並建立訂單。
-    * **我的訂單 (`myorder.php`):** 查看歷史訂單記錄。
-    * **訂單詳情 (`o_detail.php`):** 查看特定訂單的詳細內容。
-    * **取消訂單 (`o_cancel.php`):** 在特定條件下取消未完成的訂單。
+* **功能:** 建立訂單、查看歷史訂單、訂單詳情與取消功能。
 
 ### D. 錢包與支付 (Wallet & Payment)
 模擬電子錢包功能，使用者可管理帳戶餘額以進行支付。
 * **相關檔案:** `wallet.php`
-* **功能:**
-    * 查看目前餘額
-    * 儲值或交易扣款紀錄 (依據 `action.php` 邏輯)
+* **功能:** 餘額查詢、儲值與扣款邏輯 (`action.php`)。
 
 ---
 
 ## 5. 系統介面展示 (UI Showcase)
 
-以下為系統實際運行之介面截圖：
+以下依序展示系統實際運行之操作介面與功能畫面：
 
-| 商店/訂單頁面 | 功能操作頁面 |
+### 5.1 核心功能介面
+| 介面一 | 介面二 |
 | :---: | :---: |
-| ![Shop List or Order Page](image_4603fc.jpg) | ![Wallet or Dashboard](image_4600b9.jpg) |
-| *商店列表與選購介面* | *個人中心或錢包管理介面* |
+| ![UI Screenshot 1](4.jpg) | ![UI Screenshot 2](3.png) |
+| *主要功能或首頁畫面* | *列表或選單畫面* |
+
+### 5.2 詳細操作介面
+| 介面三 | 介面四 |
+| :---: | :---: |
+| ![UI Screenshot 3](2.jpg) | ![UI Screenshot 4](1.png) |
+| *訂單或詳細資訊畫面* | *個人中心或錢包畫面* |
 
 ---
 
