@@ -16,7 +16,7 @@
 本系統採用標準的 LAMP/WAMP 架構邏輯。以下為系統的整體架構與概念示意：
 
 ### 3.1 系統主架構圖
-![System Architecture](6.jpg)
+![System Architecture](6.png)
 *(系統架構與運作邏輯總覽)*
 
 ### 3.2 資料庫與流程設計
@@ -58,13 +58,13 @@
 ### 5.1 核心功能介面
 | 介面一 | 介面二 |
 | :---: | :---: |
-| ![UI Screenshot 1](4.jpg) | ![UI Screenshot 2](3.png) |
+| ![UI Screenshot 1](4.png) | ![UI Screenshot 2](3.png) |
 | *主要功能或首頁畫面* | *列表或選單畫面* |
 
 ### 5.2 詳細操作介面
 | 介面三 | 介面四 |
 | :---: | :---: |
-| ![UI Screenshot 3](2.jpg) | ![UI Screenshot 4](1.png) |
+| ![UI Screenshot 3](2.png) | ![UI Screenshot 4](1.png) |
 | *訂單或詳細資訊畫面* | *個人中心或錢包畫面* |
 
 ---
